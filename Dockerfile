@@ -12,7 +12,7 @@ LABEL org.freenas.interactive="false" \
           {								\
               \"name\": \"/usr/lib/unifi/data\",					\
               \"descr\": \"UniFi configuration data and DBs\"			\
-          },
+          },\
           {								\
               \"name\": \"/usr/lib/unifi/cert\",					\
               \"descr\": \"SSL custom certificate storage\"			\
