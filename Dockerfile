@@ -1,6 +1,6 @@
-FROM goofball222/unifi:latest
+FROM goofball222/unifi:sc
 LABEL org.freenas.interactive="false" \
-      org.freenas.version="5.5.20"\
+      org.freenas.version="5.6.16"\
       org.freenas.upgradeable="false" \
       org.freenas.expose-ports-at-host="true" \
       org.freenas.autostart="true" \
@@ -11,11 +11,15 @@ LABEL org.freenas.interactive="false" \
       org.freenas.volumes="[						\
           {								\
               \"name\": \"/usr/lib/unifi/data\",					\
-              \"descr\": \"UniFi Configuration Data\"			\
-          },							\
+              \"descr\": \"UniFi configuration data and DBs\"			\
+          },
+          {								\
+              \"name\": \"/usr/lib/unifi/cert\",					\
+              \"descr\": \"SSL custom certificate storage\"			\
+          },          							\
           {								\
               \"name\": \"/usr/lib/unifi/logs\",					\
-              \"descr\": \"UniFi Controller Logs\"		    \
+              \"descr\": \"UniFi and MongoDB logs for troubleshooting\"		    \
           }								\
       ]"                                \
       org.freenas.settings="[ 						\
