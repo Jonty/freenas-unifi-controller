@@ -1,4 +1,4 @@
-FROM goofball222/unifi:sc
+FROM goofball222/unifi:latest
 LABEL org.freenas.interactive="false" \
       org.freenas.version="5.6.19"\
       org.freenas.upgradeable="false" \
